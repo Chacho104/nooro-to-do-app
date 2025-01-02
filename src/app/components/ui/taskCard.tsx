@@ -7,7 +7,7 @@ interface TaskCardProps {
 }
 const TaskCard: React.FC<TaskCardProps> = ({ tasks }) => {
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 flex flex-col items-center justify-center">
       {tasks.map((task) => (
         <TaskCardItem key={task.id} task={task} />
       ))}
